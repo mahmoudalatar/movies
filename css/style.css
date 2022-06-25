@@ -1,0 +1,96 @@
+/* General */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar section */
+nav {
+  z-index: 999;
+}
+
+.nav-header {
+  width: 60px;
+  position: absolute;
+}
+
+.nav-header div {
+  cursor: pointer;
+}
+
+.nav-body {
+  position: absolute;
+  width: 250px;
+  left: -250px;
+}
+
+.nav-body ul li {
+  margin: 14px 0;
+  padding-top: 500px;
+  opacity: 0;
+}
+
+.nav-body a:hover {
+  color: #ff655c;
+  transition: all 0.3s;
+}
+
+.nav-body .nav-social-item div {
+  color: gray;
+}
+
+.nav-social-item {
+  background: #000;
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+}
+
+/* Search section */
+.movies {
+  width: 80%;
+  margin: auto;
+}
+
+.movies .search input,
+footer input {
+  border: gray;
+  outline: none;
+  color: white;
+  padding: 12px;
+}
+
+.movies-items .item:hover .move-content {
+  top: 0;
+}
+
+.movies-items .move-content {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  transition: 1s all;
+}
+
+.movies-items .move-content h2 {
+  font-weight: 400;
+}
+
+/* form section */
+#contact-us form input + div {
+  padding: 10px;
+  margin: 0;
+  display: none;
+}
+
+#contact-us form .row {
+  margin-bottom: 14px;
+}

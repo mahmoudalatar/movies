@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Movies</title>
+  </head>
+  <body class="bg-black">
+    <!-- Navbar section -->
+    <nav class="position-fixed d-flex flex-row-reverse justify-content-end">
+      <div
+        class="nav-header py-4 bg-light d-flex flex-column justify-content-between align-items-center vh-100"
+      >
+        <div class="nav-logo px-3">
+          <img src="img/logo.png" class="w-100" alt="" />
+        </div>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="d-flex flex-column">
+          <i class="fas fa-globe mb-3"></i>
+          <i class="fas fa-share-alt"></i>
+        </div>
+      </div>
+      <div class="nav-body bg-black vh-100 p-4 pe-0">
+        <div class="nav-content h-50 overflow-hidden">
+          <ul class="d-flex flex-column align-items-start p-0">
+            <li><a href="#">Now playing</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Top Rated</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="nav-social-item">
+          <a class="m-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="m-2" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="m-2" href="#"><i class="fas fa-globe"></i></a>
+          <div class="pt-3">
+            <span>Copyright Â© 2019 All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search section -->
+    <section class="movies pt-5">
+      <div class="container">
+        <div class="search mb-5 row justify-content-center">
+          <div class="col-5">
+            <input
+              type="text"
+              placeholder="get movies by word..."
+              class="search-by border-0 border-bottom bg-black w-100 mx-4 text-center"
+            />
+          </div>
+          <div class="col-5">
+            <input
+              type="text"
+              placeholder="search..."
+              class="search-for border-0 border-bottom bg-black w-100 mx-4 text-center"
+            />
+          </div>
+        </div>
+        <div class="movies-items pt-5">
+          <div class="row g-4 m-auto"></div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact-us">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="footer-header my-5">
+              <h2 class="fw-light text-white">ContactUs</h2>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="ms-0 border-0 border-bottom bg-black w-100 mx-4 text-center"
+                  />
+                  <div class="alert alert-danger" id="namealert" role="alert">
+                    Your Name is not valid
+                  </div>
+                </div>
+                <div class="col-6">
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email"
+                    class="ms-0 border-0 border-bottom bg-black w-100 mx-4 text-center"
+                  />
+                  <div class="alert alert-danger" id="emailalert" role="alert">
+                    Your Email is not valid
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="number"
+                    placeholder="Enter Your Phone"
+                    class="ms-0 border-0 border-bottom bg-black w-100 mx-4 text-center"
+                  />
+                  <div class="alert alert-danger" id="phonealert" role="alert">
+                    Your Phone is not valid
+                  </div>
+                </div>
+                <div class="col-6">
+                  <input
+                    type="number"
+                    placeholder="Enter Your Age"
+                    class="ms-0 border-0 border-bottom bg-black w-100 mx-4 text-center"
+                  />
+                  <div class="alert alert-danger" id="agealert" role="alert">
+                    Your Age is not valid
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="password"
+                    placeholder="Enter Your Password"
+                    class="ms-0 border-0 border-bottom bg-black w-100 mx-4 text-center"
+                  />
+                  <div
+                    class="alert alert-danger"
+                    id="passwordalert"
+                    role="alert"
+                  >
+                    Your password is not valid *Minimum eight characters, at
+                    least one letter and one number
+                  </div>
+                </div>
+                <div class="col-6">
+                  <input
+                    type="password"
+                    placeholder="Reenter Your Password"
+                    class="ms-0 border-0 border-bottom bg-black w-100 mx-4 text-center"
+                  />
+                  <div
+                    class="alert alert-danger"
+                    id="repasswordalert"
+                    role="alert"
+                  >
+                    Your Repassword is not valid
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-outline-danger">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
